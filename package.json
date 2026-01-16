@@ -1,5 +1,5 @@
 {
-  "name": "copy-of-protocolo-potência-máxima",
+  "name": "protocolo-potência-máxima",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "18.2.0",
+    "react": "^19.2.3",
+    "lucide-react": "^0.562.0",
+    "framer-motion": "^12.26.2",
     "react-dom": "^19.2.3",
-    "lucide-react": "0.263.1",
-    "framer-motion": "10.16.4",
-    "recharts": "2.10.3"
+    "recharts": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
