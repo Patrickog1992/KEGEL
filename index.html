@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Protocolo Potência Máxima</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,6 +12,9 @@
             fontFamily: {
               sans: ['Poppins', 'sans-serif'],
             },
+            colors: {
+              primary: '#2563eb',
+            }
           }
         }
       }
@@ -20,23 +23,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-      body {
+      html, body {
+        height: 100%;
         font-family: 'Poppins', sans-serif;
-        background-color: #f3f4f6;
+        background-color: #f9fafb;
+        /* Melhora a fluidez em mobile impedindo o efeito elástico indesejado */
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
       }
+      
       /* Custom scrollbar for better aesthetics */
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: transparent; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #888; 
-        border-radius: 4px;
+        background: #cbd5e1; 
+        border-radius: 10px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #94a3b8; 
       }
     </style>
   <script type="importmap">
