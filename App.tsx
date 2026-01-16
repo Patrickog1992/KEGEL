@@ -968,7 +968,14 @@ export default function App() {
       <main className={`w-full mx-auto ${isSalesPage ? '' : 'max-w-md px-6 py-8 mt-6'}`}>
          {!isSalesPage && (
             <div className="flex justify-center mb-6">
-                <img src="https://i.imgur.com/5Iow3lA.png" alt="Protocolo Potência Máxima" className="w-[100px] h-[100px] object-contain" />
+                <img 
+                    src="https://i.imgur.com/5Iow3lA.png" 
+                    alt="Protocolo Potência Máxima" 
+                    className="w-[100px] h-[100px] object-contain" 
+                    loading="eager"
+                    // @ts-ignore
+                    fetchPriority="high"
+                />
             </div>
          )}
         <AnimatePresence mode='wait' custom={direction}>
